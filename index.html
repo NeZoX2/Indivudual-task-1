@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чистый Дом - Клининговые услуги</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Чистый Дом">
+                <span>Чистый Дом</span>
+            </div>
+            <nav>
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                <span>8 (800) 123-45-67</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Профессиональная уборка квартир и офисов</h1>
+            <p>Быстро, качественно, с гарантией</p>
+            <button class="btn" onclick="showOrderForm()">Заказать уборку</button>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="img/Gen.webp" alt="Уборка">
+                    <h3>Генеральная уборка</h3>
+                    <p>Полная уборка всего помещения с чисткой труднодоступных мест.</p>
+                    <span class="price">от 2500 руб.</span>
+                </div>
+                <div class="service">
+                    <img src="img/clean.jpg" alt="Уборка">
+                    <h3>Поддерживающая уборка</h3>
+                    <p>Регулярная уборка для поддержания чистоты.</p>
+                    <span class="price">от 1500 руб.</span>
+                </div>
+                <div class="service">
+                    <img src="img/carpet.jpg" alt="Уборка">
+                    <h3>После ремонта</h3>
+                    <p>Уборка после строительных работ.</p>
+                    <span class="price">от 4000 руб.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>О нашей компании</h2>
+                <p>Мы работаем на рынке клининговых услуг уже более 5 лет. Наши специалисты проходят строгий отбор и обучение. Используем только безопасные и эффективные средства.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Безопасные средства</li>
+                    <li><i class="fas fa-check"></i> Опытные сотрудники</li>
+                    <li><i class="fas fa-check"></i> Гарантия качества</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="img/uborka.png" alt="Наша команда">
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заказа -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Заказать уборку</h2>
+            <form id="orderForm" class="hidden">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <select>
+                    <option value="">Выберите услугу</option>
+                    <option value="general">Генеральная уборка</option>
+                    <option value="regular">Поддерживающая уборка</option>
+                    <option value="after">После ремонта</option>
+                </select>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+            <div class="contacts">
+                <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i> info@cleanhouse.ru</p>
+                <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Чистая, 15</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>© 2023 Чистый Дом. Все права защищены.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
